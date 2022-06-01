@@ -1,4 +1,5 @@
-import { Component, OnInit, VERSION } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Hero } from "src/app/hero";
 
 @Component({
   // metadata properties:
@@ -19,7 +20,8 @@ export class AppComponent implements OnInit {
 
   title = 'titolo';
 
-  hero = 'Windstorm';
-
-  name = 'tutorial Heroes Angular ' + VERSION.major;
+  hero: Hero = {
+    id: 1,
+    name: 'Windstorm',
+  };
 }
