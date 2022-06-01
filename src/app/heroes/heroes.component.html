@@ -2,8 +2,11 @@
 <ul class="heroes">
   <li>
     <button type="button">
-      <span class="badge">{{ hero.id }}</span>
-      <span class="name">{{ hero.name }}</span>
+      <li *ngFor="let hero of heroes">
+        <!-- iterate through the list of heroes-->
+        <span class="badge">{{ hero.id }}</span>
+        <span class="name">{{ hero.name }}</span>
+      </li>
     </button>
   </li>
 </ul>
