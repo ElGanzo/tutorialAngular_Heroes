@@ -1,3 +1,7 @@
 p {
   font-family: Lato;
 }
+
+::ng-deep h1{
+  color: rgb(65, 63, 82);
+}
